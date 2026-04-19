@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="400.0" prefWidth="600.0"
+      xmlns="http://javafx.com/javafx/25"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ventana.ControladorCalculadora">
+
+   <children>
+
+      <Label layoutX="200" layoutY="30" text="Calculadora Básica">
+         <font>
+            <Font size="18"/>
+         </font>
+      </Label>
+
+      <Label layoutX="100" layoutY="100" text="Número 1"/>
+      <TextField fx:id="txtN1" layoutX="250" layoutY="100"/>
+
+      <Label layoutX="100" layoutY="150" text="Número 2"/>
+      <TextField fx:id="txtN2" layoutX="250" layoutY="150"/>
+
+      <Button layoutX="80" layoutY="220" text="Sumar" onAction="#sumar"/>
+      <Button layoutX="170" layoutY="220" text="Restar" onAction="#restar"/>
+      <Button layoutX="260" layoutY="220" text="Multiplicar" onAction="#multiplicar"/>
+      <Button layoutX="380" layoutY="220" text="Dividir" onAction="#dividir"/>
+
+      <Label layoutX="100" layoutY="300" text="Resultado:"/>
+      <Label fx:id="lblResultado" layoutX="200" layoutY="300" text="0"/>
+
+   </children>
+</Pane>
